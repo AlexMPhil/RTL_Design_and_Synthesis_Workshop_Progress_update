@@ -25,5 +25,8 @@ UNFORTUNATELY FOR SOME REASON, WHEN I DO THE GLS STEPS AS SHOWIN IN LECTURE AFTE
 
 * Img39 shows gtkwave output of succesful GLS of bad_mux.v, where we can see that y follows i0 when select is low and follows i1 when select is high. Therefore by observing Img38 and Img39 we are able to see the Synthesis Simulation Mismatch
 
-* 
+* Img40 shows the code of module blocking_cavat.v. The logic is supposed to be (a|b)&c where d is a|b. We can predict flopped output due to wrong order of statements
+* Img 41 shows the gtkwave output of blocking_caveat.v and we can see that d following a past value combined with current c value. A consistent delay is resulted.
+* Img42 shows the yosys output of blocking_caveat.v which is an oa21, and doesnt seem to have a latch
+* Img43 shows the output of gtkwave of GLS of the same, and we see there is no past and present values being combined. Therefore by observing Img42 and Img43, we see that ther is a Synthesis Simulation Mismatch.
 
