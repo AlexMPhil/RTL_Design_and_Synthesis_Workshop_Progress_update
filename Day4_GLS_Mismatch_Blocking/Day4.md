@@ -1,4 +1,4 @@
-# Day 3 - GLS, Synthesis Simulation Mismatch, Blocking and Non-blcoking statements
+# Day 4 - GLS, Synthesis Simulation Mismatch, Blocking and Non-blcoking statements
 
 GLS or Gate Level Synthesis refers to the running of testbench with netlist as design under test (DUT). The testbench remians the stimulus injection. 
 Netlist is the same as RTL code logically therefore the testbench remains the same.
