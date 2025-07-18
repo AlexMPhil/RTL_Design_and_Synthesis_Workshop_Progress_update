@@ -13,4 +13,11 @@ Why does SS Mismatch happen?
 * Blocking vs Non-Blocking Assignments
   * Blocking (=) => statements are executed in order it is written, therefore there is consecutive statement evaluation. Here, we need to be extremely aware of th statement, where a variablles musgt be declared and ready before any processign with it.
   * Non Blocking (<=) => statements are executed parallely. easily allows for sequential circuit coding.
-* Non Standard Verilog Coding 
+* Non Standard Verilog Coding
+
+* Img 35 shows the codes of the files we will be working with=> ternary_operator_mux.v, bad_mux.v, good_mux.v. Ternary operator is of the format '<cond>?<T>:<F>'.
+* Img36 shows the gtkwave output of ternary_operator_mux.v
+* Img37 is the yosys show output of the same, showing it is a mux. It doesnt seem to form nand, clkinv and oai along with it as shown in the lecture which could be attributed to updated library.
+
+UNFORTUNATELY FOR SOME REASON, WHEN I DO THE GLS STEPS AS SHOWIN IN LECTURE AFTER THIS PINT I DO NOT GET THE '_ 6 _, _ 7 _' AS SHOWN
+
