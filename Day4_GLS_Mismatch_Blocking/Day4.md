@@ -19,5 +19,11 @@ Why does SS Mismatch happen?
 * Img36 shows the gtkwave output of ternary_operator_mux.v
 * Img37 is the yosys show output of the same, showing it is a mux. It doesnt seem to form nand, clkinv and oai along with it as shown in the lecture which could be attributed to updated library.
 
-UNFORTUNATELY FOR SOME REASON, WHEN I DO THE GLS STEPS AS SHOWIN IN LECTURE AFTER THIS PINT I DO NOT GET THE '_ 6 _, _ 7 _' AS SHOWN
+UNFORTUNATELY FOR SOME REASON, WHEN I DO THE GLS STEPS AS SHOWIN IN LECTURE AFTER THIS PINT I DO NOT GET THE '_ 6 _, _ 7 _' AS SHOWN (FOR THIS PARTICULAR VERILOG FILE)
+
+* Img38 shows the gtkwave output of bad_mux.v and it shows how because of missing sensitivity list, when sel is low, there is no output change happening and fails to respons like a proper mux. The I0 activities are not sensed when select is low.
+
+* Img39 shows gtkwave output of succesful GLS of bad_mux.v, where we can see that y follows i0 when select is low and follows i1 when select is high. Therefore by observing Img38 and Img39 we are able to see the Synthesis Simulation Mismatch
+
+* 
 
