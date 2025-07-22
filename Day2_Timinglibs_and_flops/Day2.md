@@ -8,7 +8,7 @@ Why flops? ==> to avoid glitches in combinational/sequential circuits by shieldi
 * Sync reset => wait for clock
 
 back to flops lab
-![Img02](..Day2_Timinglibs_and_flops/img02.png)
+![Img02](../Day2_Timinglibs_and_flops/img02.png)
 * Img02 is of async reset where q is only changing on clock because of d
 * Img03 also contributes.
 * Img04 is of async set where q doesnt wait for clock
